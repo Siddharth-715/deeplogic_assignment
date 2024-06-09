@@ -93,7 +93,7 @@ streamlit run "/path/to/python/file/part_three.py"
 ## Authors
 
 Contributors names and contact info
-Siddharth Singh Patel
+Siddharth Singh Patel \n
 patelsiddharth715@gmail.com
 
 
