@@ -7,19 +7,27 @@ from part_two import llm_response
 from dotenv import load_dotenv
 
 
+
 def main():
 
+    # Logo Url
     load_dotenv()
     logo_url = os.environ['logo_url']
+
+    # Title and header
     st.set_page_config(page_title="Chat PDF")
     st.image(logo_url, width=300)
     st.header("DeepLogic AI Assignment")
-    user_question = st.text_input("Ask a Question from the PDF Files")
+
+    # Project link
+    url = "https://github.com/Siddharth-715/deeplogic_assignment"
+
+    
+    user_question = st.text_input("Ask a Question from the PDF Files. ")
     if user_question:
             docsearch = st.session_state["docsearch"]
             context = get_context(docsearch, user_question)
             st.write(llm_response(user_question, context))
-
 
     with st.sidebar:
         st.title("Menu")
@@ -32,6 +40,9 @@ def main():
                     docsearch = get_vector_store(text_chunks)
                     st.session_state["docsearch"] = docsearch
                     st.success("Processing Done")
+                
+    st.write("Check this out on [Github](%s)" % url)
+    
 
 if __name__ == "__main__":
     main()
