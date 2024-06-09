@@ -23,7 +23,7 @@ def main():
     url = "https://github.com/Siddharth-715/deeplogic_assignment"
 
     
-    user_question = st.text_input("Ask a Question from the PDF Files. ")
+    user_question = st.text_input("Ask a Question from the PDF Files. For getting started just type 'help' and hit enter.")
     if user_question:
             docsearch = st.session_state["docsearch"]
             context = get_context(docsearch, user_question)
