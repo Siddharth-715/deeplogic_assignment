@@ -32,7 +32,7 @@ The project is divided into three main parts: Part One (Document Conversion, OCR
 ### Part 3: User Interaction via a Chatbot Interface
 
 **Chatbot UI**: Creates a user-friendly chatbot interface using Streamlit for user interaction with the LLM and processed documents. Users can upload multiple PDFs with a simple _drag & drop_, ask questions, request specific information, review extracted data, and provide feedback. 
-
+![UI screenshot](https://drive.google.com/file/d/1AXxHdCl7AGyRqPg8_Mv2jYcIqYAdCJXY/view?usp=sharing)
 **Pipeline Integration**: We used _LangChain_ for pipeline, to integrate LLMs, Chat prompts, Vector Store and Memory Buffer. 
 
 ## Getting Started
