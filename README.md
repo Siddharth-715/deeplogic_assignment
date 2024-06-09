@@ -73,9 +73,12 @@ Then install the required dependencies via:
 ```bash
 pip install -r requirements.txt
 ```
+
+Now create a **.env** file in the same directory and intialize secret keys as follows:
+
 > [!WARNING]
 > Keep your secrets key secure & safe. DO NOT share them publically.
-Now create a **.env** file in the same directory and intialize secret keys as follows:
+
 ```python
 GROQ_API_KEY = "<YOUR_GROQ_API_KEY>"
 logo_url = "<YOUR_LOGO_IMAGE_URL>"
