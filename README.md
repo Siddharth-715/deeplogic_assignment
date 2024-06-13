@@ -1,6 +1,9 @@
 # deeplogic_assignment
 This repository contains a pipeline for processing documents, especially invoice/receipt PDFs with text and image content. It uses OCR and LLMs to extract key information (like key-value pairs) and enables user interaction through a chatbot interface. Supports document classification and translation.
 
+## Demo Video: 
+Link: https://drive.google.com/file/d/1W62arHTm7AaZ-_a67sFFl0sXXbNz9KcE/view?usp=drive_link
+
 ## Description
 
 The project is divided into three main parts: Part One (Document Conversion, OCR, and Preprocessing); Part Two (LLM-Powered Understanding and Actions); and Part Three (User Interaction via a Chatbot Interface).
@@ -100,6 +103,8 @@ streamlit run "/path/to/python/file/part_three.py"
 Contributors names and contact info
 Siddharth Singh Patel 
 patelsiddharth715@gmail.com
+
+
 
 
 ## License
